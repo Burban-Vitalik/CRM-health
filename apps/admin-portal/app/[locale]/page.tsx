@@ -7,7 +7,7 @@ export default function WelcomeSection() {
     <div>
       <p>
         {t('descritpion', { 
-          type: t('user'), 
+          type: t('admin'), 
           portal: t('portal')
         })}
       </p>

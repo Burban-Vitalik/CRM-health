@@ -17,8 +17,11 @@
     "paths": {
       "@my-monorepo/shared-ui": ["libs/shared/ui/src/index.ts"],
       "@my-monorepo/shared-ui/utils": ["libs/shared/ui/src/lib/utils.ts"],
-      "@my-monorepo/shared-ui/components": ["libs/shared/ui/src/lib/components"],
-      "@my-monorepo/shared-ui/ui": ["libs/shared/ui/src/lib/components/ui"]
+      "@my-monorepo/shared-ui/components": [
+        "libs/shared/ui/src/lib/components"
+      ],
+      "@my-monorepo/shared-ui/ui": ["libs/shared/ui/src/lib/components/ui"],
+      "@my-monorepo/translations": ["libs/shared/translations/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -2,7 +2,9 @@
   "name": "@my-monorepo/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "pull-translations": "i18nexus pull -p libs/shared/translations/src/lib/messages"
+  },
   "private": true,
   "devDependencies": {
     "@babel/core": "^7.14.5",
@@ -15,10 +17,11 @@
     "@swc/cli": "~0.8.0",
     "@swc/core": "~1.15.5",
     "@swc/helpers": "~0.5.18",
-    "@types/node": "^20.0.0",
+    "@types/node": "20.19.9",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "autoprefixer": "10.4.13",
+    "i18nexus-cli": "^4.1.0",
     "nx": "22.6.4",
     "postcss": "8.4.38",
     "prettier": "~3.6.2",
@@ -32,6 +35,7 @@
     "clsx": "^2.1.1",
     "lucide-react": "^1.8.0",
     "next": "~16.1.6",
+    "next-intl": "^4.9.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "tailwind-merge": "^3.5.0",

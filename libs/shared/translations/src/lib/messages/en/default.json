@@ -1,0 +1,8 @@
+{
+  "Index": {
+    "admin": "Admin",
+    "descritpion": "Welcome on {type} {portal}!",
+    "portal": "Portal",
+    "user": "User"
+  }
+}

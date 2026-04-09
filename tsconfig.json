@@ -6,6 +6,7 @@
   "references": [
     { "path": "./apps/admin-portal" },
     { "path": "./apps/user-portal" },
-    { "path": "./libs/shared/ui" }
+    { "path": "./libs/shared/ui" },
+    { "path": "./libs/shared/translations"}
   ]
 }
