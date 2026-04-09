@@ -5,13 +5,17 @@
   "scripts": {},
   "private": true,
   "devDependencies": {
+    "@babel/core": "^7.14.5",
+    "@babel/preset-react": "^7.14.5",
     "@nx/js": "22.6.4",
     "@nx/next": "^22.6.4",
+    "@nx/react": "22.6.4",
     "@nx/workspace": "22.6.4",
     "@swc-node/register": "~1.11.1",
     "@swc/cli": "~0.8.0",
     "@swc/core": "~1.15.5",
     "@swc/helpers": "~0.5.18",
+    "@types/node": "^20.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "autoprefixer": "10.4.13",
@@ -23,8 +27,14 @@
     "typescript": "~5.9.2"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.2.4",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^1.8.0",
     "next": "~16.1.6",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^3.5.0",
+    "tailwindcss-animate": "^1.0.7"
   }
 }

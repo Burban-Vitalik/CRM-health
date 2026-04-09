@@ -4,17 +4,22 @@
     "rootDir": ".",
     "sourceMap": true,
     "declaration": false,
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
-    "target": "es2015",
+    "target": "es2020",
     "module": "esnext",
-    "lib": ["es2020", "dom"],
+    "lib": ["es2020", "dom", "dom.iterable"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@my-monorepo/shared-ui": ["libs/shared/ui/src/index.ts"],
+      "@my-monorepo/shared-ui/utils": ["libs/shared/ui/src/lib/utils.ts"],
+      "@my-monorepo/shared-ui/components": ["libs/shared/ui/src/lib/components"],
+      "@my-monorepo/shared-ui/ui": ["libs/shared/ui/src/lib/components/ui"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
