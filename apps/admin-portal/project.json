@@ -1,0 +1,41 @@
+{
+  "name": "admin-portal",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/admin-portal",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/admin-portal"
+      },
+      "configurations": {
+        "development": {
+          "outputPath": "apps/admin-portal"
+        },
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nx/next:server",
+      "options": {
+        "buildTarget": "admin-portal:build",
+        "dev": true,
+        "port": 3100
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "admin-portal:build:development",
+          "dev": true
+        },
+        "production": {
+          "buildTarget": "admin-portal:build:production",
+          "dev": false
+        }
+      }
+    }
+  }
+}
